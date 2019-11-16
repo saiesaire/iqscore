@@ -1,0 +1,8 @@
+!!!
+%html
+  .title
+    %h2 みんなで計るIQ
+  .tests
+    = render @tests
+  .send
+    = link_to '採点する', users_path, class: "btn"

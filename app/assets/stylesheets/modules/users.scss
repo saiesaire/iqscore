@@ -1,0 +1,12 @@
+.profile{
+  background-color: #aaFFFF;
+  &__score{
+    color: $blue;
+    font-weight: bold;
+  }
+  .btn{
+    background-color: white;
+    color: #0000FF;
+    border: 1px solid #0000FF;
+  }
+}

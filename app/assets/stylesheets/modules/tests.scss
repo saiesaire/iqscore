@@ -1,0 +1,15 @@
+.wrapper{
+  background-color: #aaFFFF;
+  width: 50%;
+  border: 1px solid #0000FF;
+  margin: 30px auto;
+  &__question{
+    color: $blue;
+    width: 300px;
+    font-weight: bold;
+  }
+  .select{
+    background-color: white;
+    color: #0000FF;
+  }
+}
