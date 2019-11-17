@@ -1,19 +1,18 @@
-!!!
-%html
-  .profile
-    .name エディ
-    .score IQ:153
-    .edit 編集する
-    .post 投稿する
-    = link_to 'テストを受ける', tests_path, class: "btn"
+.profile
+  .name エディ
+  .score IQ:153
+  .edit 編集する
+  .post 投稿する
+  = link_to 'テストを受ける', tests_path, class: "btn"
 
-    = form_with model: @test, local: true do |f|
-      %h3 投稿する
-      = f.text_area :question,         placeholder: "冒頭文"
-      = f.text_area :question_wrapper, placeholder: "本文"
-      = f.text_area :select1,          placeholder: "選択肢1"
-      = f.text_area :select2,          placeholder: "選択肢2"
-      = f.text_area :select3,          placeholder: "選択肢3"
-      = f.text_area :select4,          placeholder: "選択肢4"
-      = f.text_area :answer,           placeholder: "正解"
-      = f.submit "SEND"
+  = form_with model: @test, local: true do |f|
+    %h3 投稿する
+    = f.text_area :question,         placeholder: "冒頭文"
+    = f.text_area :question_wrapper, placeholder: "本文"
+    = f.text_area :select1,          placeholder: "選択肢1"
+    = f.text_area :select2,          placeholder: "選択肢2"
+    = f.text_area :select3,          placeholder: "選択肢3"
+    = f.text_area :select4,          placeholder: "選択肢4"
+    = f.text_area :answer,           placeholder: "正解"
+    = f.submit "SEND"
+  = link_to 'ログアウトする', destroy_user_session_path, method: :delete

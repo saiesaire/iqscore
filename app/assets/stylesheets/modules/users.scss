@@ -1,12 +1,17 @@
 .profile{
-  background-color: #aaFFFF;
+  height: 100vh;
+  background-color: #eeeeFF;
+  padding-left: 15px;
   &__score{
     color: $blue;
     font-weight: bold;
   }
   .btn{
-    background-color: white;
-    color: #0000FF;
-    border: 1px solid #0000FF;
+    background-color:$blue;
+    border: none;
+    color: white;
+    font-size: 16px;
+    height: 50px;
+    padding: 0 30px;
   }
 }

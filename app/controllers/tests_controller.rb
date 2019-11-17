@@ -2,7 +2,7 @@ class TestsController < ApplicationController
 
   def index
    @test = Test.new
-   @tests = Test.all
+   @tests = Test.order("RAND()").limit(5)
   end
 
   def create
